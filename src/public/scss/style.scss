@@ -1,0 +1,172 @@
+@import './helpers/mixins';
+@import './helpers/variables';
+@import './helpers/media-queries';
+@import './helpers/icons';
+
+@font-face {
+    font-family: sansation;
+    src: url(/fonts/sansation.woff);
+}
+
+:root{
+    --q-unique: #FFD700;
+    --q-vintage: #476291;
+    --q-genuine: #4D7455;
+    --q-strange: #CF6A32;
+    --q-unusual: #8650AC;
+    --q-haunted: #38F3AB;
+    --q-collectors: #AA0000;
+    --q-decorated: #FAFAFA; 
+    --q-self-made: #70B04A;
+    --q-community: #70B04A;
+}
+
+$content_max_width : 1800px;
+
+:root{
+    --warning_col: rgb(145, 28, 28);
+    --qualityStrange: #f47227;
+}
+
+html{
+    font-size: 16px;
+    position: relative;
+    &.no-scroll{
+        overflow-y: hidden !important;
+    }
+}
+
+body{
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif !important;
+    /* background: rgb(83, 35, 131); */
+    background: rgb(72, 72, 72);
+    font-size: 22px;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    line-height: unset !important;
+    font-weight: 500 !important;
+    &.no-scroll{
+        overflow-y: hidden !important;
+        @media screen and (min-width: 677px) {
+            overflow-y: scroll !important;
+        }
+    }
+}
+body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+element.style {
+}
+body.dark-blue {
+    background: #011f4d;
+}
+body {
+    position: relative;
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: Roboto, sans-serif !important;
+    background: rgba(1,31,77,1);
+    font-size: 22px;
+    color: white !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    line-height: unset !important;
+    font-weight: 500 !important;
+    main{
+        position: relative;
+        display: block;
+        /* min-height: calc(100vh - 3.5rem - 1rem); */ /* page - nav - padding */
+        max-width: calc(1800px - 2rem);
+        min-height: 850px;
+        max-height: 100dvh;
+        margin: 0 auto;
+        padding: .5rem 0;
+        z-index: 1;
+        img.home-background1{
+            display: block;
+            position: relative;
+            width: 90dvw;
+            max-width: 100%;
+            margin-left: auto;
+        }
+        .text{
+            display: block;
+            width: auto;
+            padding: 1rem 2rem;
+            text-align: left;
+            margin-top: -3rem;
+            img.logotype{
+                height: 4rem;
+                display: block;
+            }
+            span{
+                margin-top: .5rem;
+                font-size: 23px !important;
+                color: rgb(208, 208, 208);
+                display: block;
+            }
+        }
+        .offline-countdown{
+            display: block;
+            position: relative;
+            text-align: right;
+            padding: 1rem 1rem;
+            margin-left: auto;
+            font-size: 20px !important;
+            color: rgb(186, 186, 186);
+            .groups{
+                display: block;
+                position: absolute;
+                bottom: 1rem;
+                left: 2.5rem;
+                a{
+                    text-decoration: none;
+                    color: rgba(140, 140, 140, 0.747);
+                    transition: 150ms;
+                    font-size: 33px !important;
+                    margin-right: .5rem;
+                    &:hover{
+                        color: rgb(140, 140, 140);
+                    }
+                }
+            }
+        }
+        @include lt-sm{
+            .text{
+                margin-top: 0 !important;
+                text-align: center;
+                img.logotype{
+                    height: 3rem;
+                    margin: 0 auto;
+                    padding-bottom: .5rem;
+                }
+            }
+            .offline-countdown{
+                margin-top: .5rem;
+                text-align: center;
+                #time{
+                    background: black;
+                    border-radius: 5px;
+                    padding: .7rem;
+                }
+                .groups{
+                    bottom: -3.5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}

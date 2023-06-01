@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Fortress 2 Trading Website, TF2 Trade Site">
+    <link rel="icon" href="/img/logo_icon.png">
+    <title>TF2 DEAL — Trade your Team Fortress 2 items with Trade Bot</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <img class="home-background1" src="/img/cabin.webp" alt="">
+        <div class="text">
+            <img src="/img/logotype.png" alt="" class="logotype">
+            <span>The site is currently offline. (Most likely due to a maintenance)</span>
+            <span>Please be patient and try again later...</span>
+        </div>
+        <span class="offline-countdown">
+            <span id="time"></span>
+            <div class="groups">
+                <a href="https://steamcommunity.com/groups/tf2dealgroup" target="_blank">
+                    <span class="icon icon-steam_circle"></span>
+                </a>
+                <a href="https://www.facebook.com/groups/tf2deal" target="_blank">
+                    <span class="icon icon-facebook"></span>
+                </a>
+            </div>
+        </span>
+    </main>
+    <script>
+        const timeDate = new Date(Number(`<%- offlineTimer %>`)).toLocaleDateString();
+        let timeTime = new Date(Number(`<%- offlineTimer %>`)).toLocaleTimeString();
+        
+        if(timeTime[timeTime.length - 1] == 'M'){
+            const ending = timeTime.substring(timeTime.length - 2)
+            timeTime = timeTime.slice(0, -6)
+            timeTime = timeTime + " " + ending
+        } else {
+            timeTime = timeTime.slice(0, -3)
+        }
+        
+        $('.offline-countdown #time').text(`${timeDate} (${timeTime})`)
+    </script>
+</body>
+</html>

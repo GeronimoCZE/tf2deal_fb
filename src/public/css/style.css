@@ -1,0 +1,405 @@
+/* Main background */
+/* Sign-in / User */
+/* Buttons */
+/* Components  */
+/* Item Qualities */
+/* Item Grades */
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/icomoon.eot?vejnw1");
+  src: url("../font/icomoon.eot?vejnw1#iefix") format("embedded-opentype"), url("../font/icomoon.ttf?vejnw1") format("truetype"), url("../font/icomoon.woff?vejnw1") format("woff"), url("../font/icomoon.svg?vejnw1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  unicode-range: U+00-FFFF;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hat1:before {
+  content: "\e900";
+}
+
+.icon-hat2:before {
+  content: "\e901";
+}
+
+.icon-autoselect:before {
+  content: "\e902";
+}
+
+.icon-trade1:before {
+  content: "\e903";
+}
+
+.icon-discord:before {
+  content: "\e933";
+}
+
+.icon-steam_circle:before {
+  content: "\e904";
+}
+
+.icon-chat:before {
+  content: "\e905";
+}
+
+.icon-checkmark:before {
+  content: "\e906";
+}
+
+.icon-trade2:before {
+  content: "\e907";
+}
+
+.icon-home:before {
+  content: "\e908";
+}
+
+.icon-pencil:before {
+  content: "\e909";
+}
+
+.icon-ticket:before {
+  content: "\e90a";
+}
+
+.icon-credit-card:before {
+  content: "\e90b";
+}
+
+.icon-clock:before {
+  content: "\e90c";
+}
+
+.icon-drawer:before {
+  content: "\e90d";
+}
+
+.icon-download:before {
+  content: "\e90e";
+}
+
+.icon-database:before {
+  content: "\e90f";
+}
+
+.icon-spinner1:before {
+  content: "\e910";
+}
+
+.icon-search:before {
+  content: "\e911";
+}
+
+.icon-wrench:before {
+  content: "\e912";
+}
+
+.icon-equalizer:before {
+  content: "\e913";
+}
+
+.icon-refined_metal:before {
+  content: "\e914";
+}
+
+.icon-stats-dots:before {
+  content: "\e915";
+}
+
+.icon-stats-bars:before {
+  content: "\e916";
+}
+
+.icon-plus:before {
+  content: "\e917";
+}
+
+.icon-minus:before {
+  content: "\e918";
+}
+
+.icon-exit:before {
+  content: "\e919";
+}
+
+.icon-spinner2:before {
+  content: "\e91a";
+}
+
+.icon-code:before {
+  content: "\e91b";
+}
+
+.icon-facebook:before {
+  content: "\e91c";
+}
+
+.icon-youtube:before {
+  content: "\e91d";
+}
+
+.icon-youtube2:before {
+  content: "\e91e";
+}
+
+.icon-steam_rectangle:before {
+  content: "\e91f";
+}
+
+.icon-paypal:before {
+  content: "\e920";
+}
+
+.icon-close:before {
+  content: "\e921";
+}
+
+.icon-trash1:before {
+  content: "\e922";
+}
+
+.icon-user:before {
+  content: "\e923";
+}
+
+.icon-signal:before {
+  content: "\e924";
+}
+
+.icon-info:before {
+  content: "\e925";
+}
+
+.icon-logout:before {
+  content: "\e926";
+}
+
+.icon-notifications1:before {
+  content: "\e927";
+}
+
+.icon-notifications2:before {
+  content: "\e928";
+}
+
+.icon-verified:before {
+  content: "\e929";
+}
+
+.icon-arrow_down:before {
+  content: "\e92a";
+}
+
+.icon-trash-can2:before {
+  content: "\e92b";
+}
+
+.icon-key:before {
+  content: "\e92c";
+}
+
+.icon-trash-can1:before {
+  content: "\e92d";
+}
+
+.icon-mail:before {
+  content: "\e92e";
+}
+
+.icon-group:before {
+  content: "\e92f";
+}
+
+.icon-asc:before {
+  content: "\e930";
+}
+
+.icon-desc:before {
+  content: "\e931";
+}
+
+.icon-trash-can3:before {
+  content: "\e932";
+}
+
+@font-face {
+  font-family: sansation;
+  src: url(/fonts/sansation.woff);
+}
+:root {
+  --q-unique: #FFD700;
+  --q-vintage: #476291;
+  --q-genuine: #4D7455;
+  --q-strange: #CF6A32;
+  --q-unusual: #8650AC;
+  --q-haunted: #38F3AB;
+  --q-collectors: #AA0000;
+  --q-decorated: #FAFAFA;
+  --q-self-made: #70B04A;
+  --q-community: #70B04A;
+}
+
+:root {
+  --warning_col: rgb(145, 28, 28);
+  --qualityStrange: #f47227;
+}
+
+html {
+  font-size: 16px;
+  position: relative;
+}
+html.no-scroll {
+  overflow-y: hidden !important;
+}
+
+body {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif !important;
+  /* background: rgb(83, 35, 131); */
+  background: rgb(72, 72, 72);
+  font-size: 22px;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  line-height: unset !important;
+  font-weight: 500 !important;
+}
+body.no-scroll {
+  overflow-y: hidden !important;
+}
+@media screen and (min-width: 677px) {
+  body.no-scroll {
+    overflow-y: scroll !important;
+  }
+}
+
+body::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+body.dark-blue {
+  background: #011f4d;
+}
+
+body {
+  position: relative;
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: Roboto, sans-serif !important;
+  background: rgb(1, 31, 77);
+  font-size: 22px;
+  color: white !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  line-height: unset !important;
+  font-weight: 500 !important;
+}
+body main {
+  position: relative;
+  display: block;
+  /* min-height: calc(100vh - 3.5rem - 1rem); */ /* page - nav - padding */
+  max-width: calc(1800px - 2rem);
+  min-height: 850px;
+  max-height: 100dvh;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  z-index: 1;
+}
+body main img.home-background1 {
+  display: block;
+  position: relative;
+  width: 90dvw;
+  max-width: 100%;
+  margin-left: auto;
+}
+body main .text {
+  display: block;
+  width: auto;
+  padding: 1rem 2rem;
+  text-align: left;
+  margin-top: -3rem;
+}
+body main .text img.logotype {
+  height: 4rem;
+  display: block;
+}
+body main .text span {
+  margin-top: 0.5rem;
+  font-size: 23px !important;
+  color: rgb(208, 208, 208);
+  display: block;
+}
+body main .offline-countdown {
+  display: block;
+  position: relative;
+  text-align: right;
+  padding: 1rem 1rem;
+  margin-left: auto;
+  font-size: 20px !important;
+  color: rgb(186, 186, 186);
+}
+body main .offline-countdown .groups {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 2.5rem;
+}
+body main .offline-countdown .groups a {
+  text-decoration: none;
+  color: rgba(140, 140, 140, 0.747);
+  transition: 150ms;
+  font-size: 33px !important;
+  margin-right: 0.5rem;
+}
+body main .offline-countdown .groups a:hover {
+  color: rgb(140, 140, 140);
+}
+@media screen and (max-width: 677px) {
+  body main .text {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+  body main .text img.logotype {
+    height: 3rem;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+  }
+  body main .offline-countdown {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  body main .offline-countdown #time {
+    background: black;
+    border-radius: 5px;
+    padding: 0.7rem;
+  }
+  body main .offline-countdown .groups {
+    bottom: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
